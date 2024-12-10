@@ -1,0 +1,219 @@
+<!-- this is a food dilivery website look like zamatoo -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Delivery Website of M.R.-Raushan</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #f94141;
+      color: rgb(255, 255, 255);
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20rem;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    .btn-login {
+      background-color: white;
+      color: #f83838;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-login:hover {
+      background-color: #aa1414;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      text-align: center;
+      padding: 4rem 2rem;
+      background-color: #eb2424;
+    }
+
+    .hero-section h1 {
+      font-size: 4rem;
+      color: #5a2525;
+    }
+
+    .hero-section p {
+      margin: 1rem 0;
+      font-size: 1.2rem;
+      color: #bda6a6fa;
+    }
+
+    .hero-section input {
+      width: 60%;
+      padding: 0.5rem;
+      margin-right: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .btn-search {
+      padding: 0.5rem 1rem;
+      background-color: #ff4d4d;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Featured Restaurants */
+    .featured-section {
+      padding: 2rem;
+    }
+
+    .featured-section h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .restaurant-container {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .restaurant-card {
+      border: 1px solid #c99595;
+      border-radius: 10px;
+      padding: 1rem;
+      width: 300px;
+      text-align: center;
+    }
+
+    .restaurant-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .restaurant-card h3 {
+      margin: 1rem 0;
+      color: #dc7d7d;
+    }
+
+    .restaurant-card p {
+      color: #ebd2d2;
+    }
+
+    .restaurant-card button {
+      padding: 0.5rem 1rem;
+      background-color: #bc0b11;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #c71313;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Zamatoo</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#restaurants">Restaurants</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="btn-login">Login</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <h1>Order Your Favorite Food Online from Zamatoo  build by (mr.Raushan)</h1>
+      <p><h2>Fast delivery to your doorstep just a second .</h2></p>
+      <input type="text" placeholder="Search for restaurants or dishes">
+      <button class="btn-search">Search</button>
+    </section>
+
+    <!-- Featured Restaurants -->
+    <section id="restaurants" class="featured-section">
+      <h2>Featured Restaurants</h2>
+      <div class="restaurant-container">
+        <div class="restaurant-card">
+          <img src="https://4.bp.blogspot.com/-n-jZjyEzncE/Uq8IxN6-giI/AAAAAAAADWk/OL-YhSPEG_4/s1600/Pizza+Food+Hd+Wallpaper.jpg" alt="Restaurant 1">
+          <h3>Pizza Palace</h3>
+          <p>Italian, Pizza</p>
+          <button>Order Now</button>
+        </div>
+        <div class="restaurant-card">
+          <img src="https://wallpaperaccess.com/full/1598022.jpg" alt="Restaurant 2">
+          <h3>Burger King</h3>
+          <p>American, Fast Food</p>
+          <button>Order Now</button>
+        </div>
+        <div class="restaurant-card">
+          <img src="https://thumbs.dreamstime.com/z/litti-chokha-liti-choka-bihar-jharkhand-uttar-pradesh-stuffed-chana-sattu-served-alu-aloo-baingan-bharta-desi-216892384.jpg" alt="Restaurant 3">
+          <h3>Litti Chokha</h3>
+          <p>Bihar,famous Liti </p>
+          <button>Order Now</button>
+        </div>
+        <div class="restaurant-card">
+          <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2023/04/butter-chicken-recipe.jpg.webp" alt="Restaurant 4">
+          <h3>butter Chicken</h3>
+          <p>India,home made chicken </p>
+          <button>Order Now</button>
+        </div>
+        <div class="restaurant-card">
+          <img src="https://tse1.mm.bing.net/th?id=OIP.D8wTJQTUfdxqXubUnLE33QHaFk&pid=Api&P=0&h=180"alt="Restaurant 5">
+          <h3>>Gulab Jamun</h3>
+          <p>Indian, sweets</p>
+          <button>Order Now</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Zamatoo. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const searchButton = document.querySelector(".btn-search");
+
+      searchButton.addEventListener("click", () => {
+        const searchInput = document.querySelector("input").value;
+        alert(`You searched for: ${searchInput}`);
+      });
+    });
+  </script>
+</body>
+</html>
